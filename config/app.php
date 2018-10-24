@@ -160,6 +160,7 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+        Yajra\Oci8\Oci8ServiceProvider::class,
         /*
          * Package Service Providers...
          */
