@@ -12,5 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    //return view('welcome');
+
+    $m = DB::table("fbp.fbp_set_of_books")->get();
+    dd($m->all());
 });
