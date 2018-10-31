@@ -14,6 +14,10 @@
 Route::get('/', function () {
     //return view('welcome');
 
-    $m = DB::table("fbp.fbp_set_of_books")->get();
+    $m = DB::table("test")->get();
     dd($m->all());
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
